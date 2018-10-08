@@ -1,0 +1,102 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+        	padding: 0;
+        	margin: 0;
+
+        }
+        .wrap{
+        	width: 1200px;
+        	height: 397px;
+        	border:1px solid black;
+        	margin:0 auto;
+       
+        	overflow: hidden;
+        }
+        #shou{display: block;}
+        .ce{
+        	position: relative;
+            width: 1002px;
+            height: 73px;
+            bottom: 73px;
+            left: 110px;
+        	background-image: url(images/di.png);
+        }
+        .wrap a{
+        	display: none;
+        }
+        .ce span{
+            display: block;
+            width: 30px;
+            height: 73px;
+            line-height: 73px;
+            color: black;
+            text-align: center;
+            font-weight: bolder;
+            cursor: pointer;
+            font-size: 40px;
+            opacity: 0.5;
+        }
+        #left{float: left;}
+        #right{float: right;}
+    </style>
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <a href="#" id="shou"><img src="images/img1.gif"></a>
+        <a href="#"><img src="images/img2.jpg"></a>
+        <a href="#"><img src="images/img3.jpg"></a>
+        <a href="#"><img src="images/img4.jpg"></a>
+        <a href="#"><img src="images/img5.jpg"></a>
+        <a href="#"><img src="images/img6.jpg"></a>
+        <a href="#"><img src="images/img7.jpg"></a>
+        <a href="#"><img src="images/img8.jpg"></a>
+        <a href="#"><img src="images/img9.jpg"></a>
+        <div class="ce">
+            <span id="left"> < </span>
+            <span id="right"> > </span>
+        </div>
+</div>
+</body>
+
+<script>
+    var wrap = document.getElementsByClassName("wrap")[0];
+	var imgs = wrap.getElementsByTagName("a");
+	var left = document.getElementById("left");
+	var right = document.getElementById("right");
+	var i = 0;
+    function animate (wrap,imgs,left,right,num){
+    
+        function imgTag(){
+            imgs[i%9].style.display = "none";
+            i++;
+            imgs[i%9].style.display = "block";
+        }
+        var stop = setInterval(imgTag,2000) ;
+        wrap.onmouseover=function(){
+            clearInterval(stop)
+        }
+        wrap.onmouseout = function(){
+            stop = setInterval(imgTag,2000)
+        }
+        left.onclick = function(){
+            imgs[i%9].style.display = "none";
+            i--;
+            if(i<0){
+                i=8;
+            }
+            imgs[i%9].style.display = "block";
+        }
+        right.onclick = function(){
+            imgTag();
+        }
+        
+    }
+    animate(wrap,imgs,left,right,i);
+</script>
+</html>
