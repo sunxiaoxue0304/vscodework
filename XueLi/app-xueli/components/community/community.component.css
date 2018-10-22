@@ -1,0 +1,23 @@
+.container{
+    width: 700px;
+    margin: 0 auto;
+}
+.container .img{
+    width: 700px;
+    height: 300px;
+    margin-top: 20px;
+}
+.container .name{
+    font-size: 30px;
+    margin-top: 20px;
+}
+.container .mid{
+    color: gray;
+    font-size: 13px;
+}
+.mid span{
+    float: right;
+    margin-top: 25px;
+    margin-right: 20px;
+}
+.content{font-size: 20px;margin-top: 20px;}

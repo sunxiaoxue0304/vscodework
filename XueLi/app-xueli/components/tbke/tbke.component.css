@@ -1,0 +1,50 @@
+.big{
+    height: 30px;
+    width: 700px;
+    border-bottom: 1px solid #d2d2d2;
+}
+.ss{
+    float: right;
+    width: 100px;
+    height: 30px;
+    padding-right: 100px;
+}
+.ss input{height: 30px;float:left;}
+.ss button{
+    width: 40px;
+    height: 30px;
+    position: absolute;
+}
+.bot{width: 700px;}
+.bot li{
+    margin-top: 15px;
+    width: 680px;
+    height: 140px;
+    border-bottom: 1px solid #d2d2d2;
+}
+.bot li .img{
+    float: left;
+    width: 240px;
+    height: 120px;
+    margin: auto 5px;
+}
+.zi{
+    float: left;
+    margin-left: 15px;
+    font-size: 20px;
+}
+.detail{
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    width: 400px;
+    height: 40px;
+    color:#d2d2d2;
+    font-size: 15px;
+    overflow: hidden;
+}
+.di{
+    display: inline;
+    margin-left: 15px;
+}
