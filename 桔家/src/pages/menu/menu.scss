@@ -1,0 +1,86 @@
+page-menu {
+    
+    
+    ion-content{
+        .header{
+            position: relative;
+            height: 178px;
+            .touxiang{
+                position: absolute;
+                top: 17%;
+                left: 37%;
+            }
+            p{
+                position: absolute;
+                bottom: 3%;
+                left: 37%;
+                font-size: 20px;
+            }
+        }
+        ion-grid{
+            background-color: #d1d1d1;
+            height: auto;
+            width: 100%;
+            
+            div{
+                height: 50px;
+                line-height: 50px;
+                position: relative;
+            }
+            a{
+                position: absolute;
+                color:grey;;
+                right: 2px;
+            }
+            ion-col{
+                height: 100px;
+                position: relative;
+                text-align: center;
+                div{
+                    background-color: #fff;
+                    height: 100%;
+                    p{
+                        position: absolute;
+                        text-align: center;
+                        width: 100%;
+                        height: 12px;
+                        bottom: 20px;
+                    }
+                }
+                ion-icon{
+                    font-size: 40px;
+                    margin-top: 15px;
+                }
+                
+            }
+        
+            
+        }
+
+        // background: url(../assets/imgs/bg.png);
+        // background-size: cover;
+        // .box{
+        //     ion-item{
+        //         background: transparent;
+        //         ion-icon{
+        //             color:#d1dad8;
+        //         }
+        //         input::-webkit-input-placeholder {
+        //             color: #f00;
+        //             font-size: 14px;
+        //         }
+        //         button{
+        //             color: red;
+        //         }
+        //     }
+        //     button{
+        //         margin-top: 50px;
+        //         color: #fff;
+        //     }
+        //     p{
+        //         color: #fff!important;
+        //         text-align: center;
+        //     }
+        // }
+    }
+}
