@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { SettingPage } from '../setting/setting';
+import { DingdanPage } from '../dingdan/dingdan';
 
 /**
  * Generated class for the MenuPage page.
@@ -20,6 +21,10 @@ export class MenuPage {
   }
   goSub(){
     this.navCtrl.push(SettingPage);
+  }
+
+  goSub1(){
+    this.navCtrl.push(DingdanPage);
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad MenuPage');

@@ -7,12 +7,12 @@
 
 <ion-content>
   <div class="header">
-    <img src="../../assets/imgs/my_02.png">
+    <img style="display:block;" src="../../assets/imgs/my_02.png">
     <img src="../../assets/imgs/toux.png" class="touxiang">
     <p>土方桔桔桔</p>
   </div>
   <ion-grid>
-    <div><span>我的订单<a>查看全部订单 ></a></span></div>
+    <div (click)="goSub1()"><span>我的订单<a>查看全部订单 ></a></span></div>
     <ion-row>
       <ion-col col-4>
         <div style="background-color:#ffdb2c;">
@@ -70,21 +70,5 @@
       </ion-col>
     </ion-row>
   </ion-grid>
-    <!-- <div class="box">
-        <ion-item>
-          <ion-icon name="ios-phone-portrait" item-start></ion-icon>
-          <ion-input type="number" placeholder="手机号"></ion-input>
-        </ion-item>
-        <ion-item no-padding>
-          <ion-icon name="ios-phone-portrait" item-start></ion-icon>
-          <ion-input type="text" placeholder="验证码"></ion-input>
-          <button style="width:100px;height:100%;float:right;margin:0;" item-end>倒计时30s</button>
-        </ion-item>
-        <ion-item>
-          <ion-icon name="ios-phone-portrait" item-start></ion-icon>
-          <ion-input type="password" placeholder="密码"></ion-input>
-        </ion-item>
-        <button ion-button block color="mycolor">注册</button>
-        <p>已有账号？立即登录</p>
-      </div> -->
+  
 </ion-content>

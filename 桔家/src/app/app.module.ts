@@ -16,6 +16,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { ComponentsModule } from '../components/components.module';
 import { HttpClientModule } from '@angular/common/http';
 import { SettingPage } from '../pages/setting/setting';
+import { ZhucePage } from '../pages/zhuce/zhuce';
+import { DengluPage } from '../pages/denglu/denglu';
+import { DingdanPage } from '../pages/dingdan/dingdan';
 
 @NgModule({
   declarations: [
@@ -27,15 +30,19 @@ import { SettingPage } from '../pages/setting/setting';
     MyhomePage,
     MenuPage,
     JiaPage,
-    SettingPage
+    SettingPage,
+    ZhucePage,
+    DengluPage,
+    DingdanPage
   ],
   imports: [
     BrowserModule,
     ComponentsModule,
     HttpClientModule,
     IonicModule.forRoot(
-      MyApp,{backButtonText:''}
-    )],
+      MyApp,{backButtonText:'',
+      // tabsHideOnSubPages:true
+    })],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
@@ -46,7 +53,10 @@ import { SettingPage } from '../pages/setting/setting';
     MyhomePage,
     MenuPage,
     JiaPage,
-    SettingPage
+    SettingPage,
+    ZhucePage,
+    DengluPage,
+    DingdanPage
   ],
   providers: [
     StatusBar,
