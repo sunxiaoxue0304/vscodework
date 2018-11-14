@@ -4,11 +4,13 @@ page-menu {
     ion-content{
         .header{
             position: relative;
-            height: 178px;
+            height: auto;
             .touxiang{
                 position: absolute;
                 top: 17%;
                 left: 37%;
+                border-radius: 50%;
+                overflow: hidden;
             }
             p{
                 position: absolute;
@@ -18,7 +20,7 @@ page-menu {
             }
         }
         ion-grid{
-            background-color: #d1d1d1;
+            background-color: #eee;
             height: auto;
             width: 100%;
             
@@ -48,7 +50,7 @@ page-menu {
                     }
                 }
                 ion-icon{
-                    font-size: 40px;
+                    font-size: 30px;
                     margin-top: 15px;
                 }
                 

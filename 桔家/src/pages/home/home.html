@@ -14,21 +14,21 @@
 
 <ion-content>
   <!-- 导航栏 -->
-  <ion-segment [(ngModel)]="lists" >
+  <!-- <ion-segment [(ngModel)]="lists" >
       <ion-segment-button value="tuijian">推荐</ion-segment-button>
       <ion-segment-button value="jiaju">家居</ion-segment-button>
       <ion-segment-button value="canchu">餐厨</ion-segment-button>
       <ion-segment-button value="bed">床上用品</ion-segment-button>
-    </ion-segment>
-  <!-- <ul class="navList" [(ngModel)]="lists">
-    <li class="first" value="tuijian">推荐</li>
-    <li value="jiaju">家居</li>
-    <li value="canchu">餐厨</li>
-    <li value="chuangyong">床上用品</li>
-  </ul> -->
+    </ion-segment> -->
+  <ul class="navList">
+    <li (click)="isClick(0)" [class.first]="isActive==0" >推荐</li>
+    <li (click)="isClick(1)" [class.first]="isActive==1" >家居</li>
+    <li (click)="isClick(2)" [class.first]="isActive==2" >餐厨</li>
+    <li (click)="isClick(3)" [class.first]="isActive==3" >床上用品</li>
+  </ul>
   <!-- 图片轮播 -->
-  <div [ngSwitch]="lists">
-  <div *ngSwitchCase="'tuijian'">
+  <div [ngSwitch]="isActive">
+  <div *ngSwitchCase="0">
   <ion-slides loop="true" pager="true" autoplay="2000" paginationType class="li">
     <ion-slide>
       <img src="../../assets/imgs/lb1.png">
@@ -50,37 +50,37 @@
       <ion-col col-6>
         <img src="../../assets/imgs/rm1.png">
         <p>——北欧原木色置物架——</p>
-        <span><ion-icon name="md-star-half"></ion-icon></span>
+        <span><ion-icon name="star-half"></ion-icon></span>
       </ion-col>
       <ion-col col-6>
         <img src="../../assets/imgs/rm2.png">
         <p>——简约黑檀木茶几——</p>
-        <span><ion-icon name="md-star-half"></ion-icon></span>
+        <span><ion-icon name="star-half"></ion-icon></span>
       </ion-col>
       <ion-col col-6>
         <img src="../../assets/imgs/rm3.png">
         <p>——北欧白橡木书架——</p>
-        <span><ion-icon name="md-star-half"></ion-icon></span>
+        <span><ion-icon name="star-half"></ion-icon></span>
       </ion-col>
       <ion-col col-6>
         <img src="../../assets/imgs/rm4.png">
         <p>——北欧风餐边柜——</p>
-        <span><ion-icon name="md-star-half"></ion-icon></span>
+        <span><ion-icon name="star-half"></ion-icon></span>
       </ion-col>
       <ion-col col-6>
         <img src="../../assets/imgs/rm5.png">
         <p>——北欧原木色——</p>
-        <span><ion-icon name="md-star-half"></ion-icon></span>
+        <span><ion-icon name="star-half"></ion-icon></span>
       </ion-col>
       <ion-col col-6>
         <img src="../../assets/imgs/rm6.png">
         <p>——北欧白橡木——</p>
-        <span><ion-icon name="md-star-half"></ion-icon></span>
+        <span><ion-icon name="star-half"></ion-icon></span>
       </ion-col>
     </ion-row>
   </ion-grid>
   </div>
-  <div *ngSwitchCase="'jiaju'">
+  <div *ngSwitchCase="1">
     <!-- 图片轮播 -->
     <ion-slides loop="true" pager="true" autoplay="2000" paginationType class="li">
       <ion-slide>
@@ -118,22 +118,22 @@
         <ion-col col-6>
           <img src="../../assets/imgs/jj004_03.png">
           <p>—欧式全实木花几—  RMB 600</p>
-          <span><ion-icon name="md-star-half"></ion-icon></span>
+          <span><ion-icon name="star-half"></ion-icon></span>
         </ion-col>
         <ion-col col-6>
           <img src="../../assets/imgs/jj005_03.png">
           <p>—现代简约早餐桌—  RMB 450</p>
-          <span><ion-icon name="md-star-half"></ion-icon></span>
+          <span><ion-icon name="star-half"></ion-icon></span>
         </ion-col>
         <ion-col col-6>
           <img src="../../assets/imgs/jj004_03.png">
           <p>—欧式全实木花几—  RMB 600</p>
-          <span><ion-icon name="md-star-half"></ion-icon></span>
+          <span><ion-icon name="star-half"></ion-icon></span>
         </ion-col>
         <ion-col col-6>
           <img src="../../assets/imgs/jj005_03.png">
           <p>—现代简约早餐桌—  RMB 450</p>
-          <span><ion-icon name="md-star-half"></ion-icon></span>
+          <span><ion-icon name="star-half"></ion-icon></span>
         </ion-col>
       </ion-row>
     </ion-grid>

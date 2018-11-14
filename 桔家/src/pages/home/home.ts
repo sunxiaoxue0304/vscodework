@@ -12,6 +12,11 @@ export class HomePage {
   @ViewChild('ac') ac; 
   items=[];
   icons:string="camera";
+  isActive=0;
+  isClick(i){
+    this.isActive=i;
+  }
+  arr=["推荐","家居","餐厨","床上用品"];
   constructor(public htttp:HttpClient,public navCtrl: NavController) {
   //   for (let i = 0; i < 30; i++) {
   //     this.items.push( this.items.length );
@@ -42,9 +47,9 @@ export class HomePage {
   //     refresher.complete();
   //   }, 2000);
   // }
-  goSub(){
-    this.navCtrl.push(MenuPage,{id:1});
-  }
+  // goSub(){
+  //   this.navCtrl.push(MenuPage,{id:1});
+  // }
   ionViewDidLoad(){
     // this.ac.get();
   }

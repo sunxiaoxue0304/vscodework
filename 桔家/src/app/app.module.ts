@@ -9,11 +9,13 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { MyhomePage } from '../pages/myhome/myhome';
 import { MenuPage } from '../pages/menu/menu';
+import { JiaPage } from '../pages/jia/jia';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ComponentsModule } from '../components/components.module';
 import { HttpClientModule } from '@angular/common/http';
+import { SettingPage } from '../pages/setting/setting';
 
 @NgModule({
   declarations: [
@@ -23,14 +25,16 @@ import { HttpClientModule } from '@angular/common/http';
     HomePage,
     TabsPage,
     MyhomePage,
-    MenuPage
+    MenuPage,
+    JiaPage,
+    SettingPage
   ],
   imports: [
     BrowserModule,
     ComponentsModule,
     HttpClientModule,
     IonicModule.forRoot(
-      MyApp,{backButtonText:'Back'}
+      MyApp,{backButtonText:''}
     )],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -40,7 +44,9 @@ import { HttpClientModule } from '@angular/common/http';
     HomePage,
     TabsPage,
     MyhomePage,
-    MenuPage
+    MenuPage,
+    JiaPage,
+    SettingPage
   ],
   providers: [
     StatusBar,

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { SettingPage } from '../setting/setting';
 
 /**
  * Generated class for the MenuPage page.
@@ -17,9 +18,12 @@ export class MenuPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
+  goSub(){
+    this.navCtrl.push(SettingPage);
+  }
   ionViewDidLoad() {
     console.log('ionViewDidLoad MenuPage');
   }
+  
 
 }

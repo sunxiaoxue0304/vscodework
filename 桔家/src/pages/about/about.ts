@@ -7,6 +7,10 @@ import { NavController, Slides } from 'ionic-angular';
 })
 export class AboutPage {
   @ViewChild(Slides) slides:Slides;
+  isActive=0;
+  isClick(i){
+    this.isActive=i;
+  }
   constructor(public navCtrl: NavController) {
     
   }
@@ -15,4 +19,5 @@ export class AboutPage {
   }
   change(){
   }
+  
 }
