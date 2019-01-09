@@ -1,0 +1,24 @@
+<div>
+  <div class="big">
+    我加入的
+    <div class="ss">
+      <input type="search" placeholder="输入同步课名称搜索"/>
+      <span>
+        <button value="search" >搜索</button>
+      </span>
+    </div>
+  </div>
+  <div class="bot">
+    <ul>
+      <li *ngFor="let join of myjoin">
+        <img src="{{join.images}}" class="img">
+        <div class="zi">{{join.name}}</div>
+        <div class="detail">{{join.detail}}</div><br>
+        <div class="di">
+          <img src="../assets/images/lb.png">{{join.task}}
+          <img src="../assets/images/rs.png">{{join.people}}
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

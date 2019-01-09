@@ -1,0 +1,47 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!--<input type="text" (keydown)="fun($event)" [(ngModel)]="txt">
+<h2>正在进行  <span>{{arr.length-counter}}</span></h2>
+<ul>
+  <ng-container *ngFor="let item of arr;let i=index;">
+      
+              <li *ngIf="!item.done">
+                <input type="checkbox" (click)="fun1(i)">{{item.title}}
+                <button (click)="del(i)">删除</button>
+              </li>  
+            
+  </ng-container> 
+</ul>
+<h2>已经完成   <span>{{counter}}</span></h2>
+<ul>
+    <ng-container *ngFor="let item of arr;let i=index;">
+       
+                <li *ngIf="item.done">
+                  <input checked type="checkbox" (click)="fun1(i)">{{item.title}}
+                  <button (click)="del(i)">删除</button>
+                </li> 
+              
+    </ng-container>
+</ul>
+-->
+<!--第一种方案-->
+
+<!--
+<input type="text" (keydown)="fun($event)" [(ngModel)]="txt">
+<h2>正在进行  <span>{{arr.length}}</span></h2>
+<ul>
+      <li *ngFor="let item of arr;let i=index;">
+                <input type="checkbox" (click)="fun1(i)">{{item}}
+                <button (click)="del(i)">删除</button>  
+            </li>  
+</ul>
+<h2>已经完成   <span>{{arr1.length}}</span></h2>
+<ul>
+       <li *ngFor="let item of arr1;let i=index;" >
+                  <input checked type="checkbox" (click)="fun2(i)">{{item}}
+                  <button (click)="del1(i)">删除</button>  
+              </li>
+</ul>
+-->
+<app-header></app-header>
+<router-outlet></router-outlet>
+

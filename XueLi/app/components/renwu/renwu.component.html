@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="big">
+    <ul>
+      <li><a [routerLink]="['/home/renwu/weiwancheng']"><img src="../assets/images/wwc.png">未提交</a></li>
+      <li><a [routerLink]="['/home/renwu/yiwancheng']"><img src="../assets/images/ywc.png">已完成</a></li>
+      <li><a [routerLink]="['/home/renwu/yiwanjie']"><img src="../assets/images/ywj.png">已完结</a></li>
+    </ul>
+    <div class="ss">
+      <input type="search" placeholder="输入同步课名称搜索"/>
+      <span>
+        <button value="search" >搜索</button>
+      </span>
+    </div>
+  </div>
+  <div>
+    <div class="right">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
